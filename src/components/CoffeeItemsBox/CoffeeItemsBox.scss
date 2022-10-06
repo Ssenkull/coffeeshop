@@ -1,0 +1,113 @@
+@import "../../styles/varyable.scss";
+@import "../../styles/text.scss";
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+
+.coffee_items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 800px;
+    margin-top: 61px;
+    margin-bottom: 18px;
+
+    &_item{
+        position: relative;
+        width: 220px;
+        height: 260px;
+        margin-bottom: 60px;
+        cursor: pointer;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+        transition: box-shadow .3s ease;
+
+        &_image{
+            width: 167px;
+            height: 115px;
+            position: absolute;
+            top: 37px;
+            left: 27px;
+        }
+
+        &_title{
+            position: absolute;
+            top: 166px;
+            left: 23px;
+        }
+
+        &_country{
+            position: absolute;
+            top: 195px;
+            right: 27px;
+        }
+
+        &_price{
+            position: absolute;
+            top: 223px;
+            right: 27px;
+            font-weight: bold;
+        }
+    }
+    &_item:hover{
+        box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.cards{
+    position: relative;
+    transition: all 1s ease-in-out;
+    left: -600px;
+    visibility: hidden;
+    opacity: 0;
+}
+.cards-enter {
+    left: -600px;
+    opacity: 0;
+    visibility: hidden;
+}
+.cards-enter-active {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease-in-out;
+}
+.cards-enter-done {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.cards-exit {
+    opacity: 1;
+    visibility: visible;
+}
+.cards-exit-active {
+    opacity: 0;
+    visibility: hidden;
+}
+.cards-exit-done{
+opacity: 0;
+visibility: hidden;
+transition: all 1s ease-in-out;
+}
+
+
+//MEDIA
+
+//MEDIA 992
+@media(max-width: $bp3) {
+    .coffee_items{
+        width: 767px;
+    }
+}
+//MEDIA 767
+@media(max-width: $bp4) {
+    .coffee_items{
+        width: 480px;
+    }
+}
+//MEDIA 480
+@media(max-width: $bp5) {
+    .coffee_items{
+        width: 100vw;
+        justify-content: center;
+    }
+}

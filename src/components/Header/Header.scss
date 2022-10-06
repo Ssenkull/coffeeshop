@@ -1,0 +1,64 @@
+@import "../../styles/varyable.scss";
+@import "../../styles/text.scss";
+
+.header, .header-pleasure{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: inherit;
+    max-width: $max-width;
+    min-width: $min-width;
+    height: 260px;
+    margin: 0 auto;
+    background-image: url(../../resources/singlePageHeader.png);
+
+    &__title{
+        padding-top: 130px;
+    }
+}//header
+
+.header-pleasure{
+    background-image: url(../../resources/pleasureHeader.png);
+}
+
+//MEDIA
+
+//MEDIA 1412
+@media(max-width: $bp1) {
+    .header, .header-pleasure{
+        width: 1187px;
+    }
+}
+//MEDIA 1199
+@media(max-width: $bp2) {
+    .header, .header-pleasure{
+        width: 980px;
+    }
+}
+//MEDIA 992
+@media(max-width: $bp3) {
+    .header, .header-pleasure{
+        width: 767px;
+    }
+}
+//MEDIA 767
+@media(max-width: $bp4) {
+    .header, .header-pleasure{
+        width: 480px;
+        height: 200px;
+        &__title{
+            padding-top: 90px;
+        }
+    }
+}
+//MEDIA 480
+@media(max-width: $bp5) {
+    .header, .header-pleasure{
+        width: 100vw;
+        height: 165px;
+        &__title{
+            padding-top: 55px;
+        }
+    }
+}

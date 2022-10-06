@@ -1,0 +1,103 @@
+@import "../../../styles/varyable.scss";
+@import "../../../styles/text.scss";
+
+.rectangle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+    height: 520px;
+    background-color: $main-color;
+
+    &__aboutUs{
+        width: 108px;
+        height: 26px;
+        padding-top: 80px;
+
+        span{
+            font-weight: normal;
+            color: $dark-color;
+        }
+    }
+
+    &__description{
+        width: 589px;
+        height: 223px;
+        margin-top: 41px;
+
+        p{
+            text-align: center;
+        }
+    }
+}//rectangle
+
+//MEDIA
+
+//MEDIA 992
+@media(max-width: $bp3) {
+    .rectangle{
+        height: 450px;
+    
+        &__aboutUs{
+            padding-top: 55px;
+        }
+    
+        &__description{
+            width: 589px;
+            height: 223px;
+            margin-top: 41px;
+    
+            p{
+                text-align: center;
+            }
+        }
+    }//rectangle
+}
+
+//MEDIA 767
+@media(max-width: $bp4) {
+    .rectangle{
+        height: 400px;
+        background-color: $main-color;
+    
+        &__aboutUs{
+            width: auto;
+            padding-top: 30px;
+        }
+    
+        &__description{
+            width: 400px;
+            height: 272px;
+            margin-top: 15px;
+    
+            p{
+                text-align: center;
+            }
+        }
+    }//rectangle
+}
+
+//MEDIA 480
+@media(max-width: $bp5) {
+    .rectangle{
+        height: auto;
+        .main__logo{
+            padding-top: 30px;
+        }
+        &__aboutUs{
+            width: auto;
+            padding-top: 30px;
+        }
+    
+        &__description{
+            width: 95vw;
+            padding: 0px 40px 40px 40px;
+            height: auto;
+            margin-top: 15px;
+    
+            p{
+                text-align: center;
+            }
+        }
+    }//rectangle
+}
