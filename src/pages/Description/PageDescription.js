@@ -1,5 +1,5 @@
 import "./PageDescription.scss";
-import Logo from "../Logo/Logo";
+import Logo from "../../components/Logo/Logo";
 
 const PageDescription = (props) => {
     return(

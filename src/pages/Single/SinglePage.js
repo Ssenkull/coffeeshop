@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import data from "../../data/data";
 import cardItem from "../../resources/cards__image/sinplePageCard.png";
-import Logo from "../Logo/Logo";
-import Header from "../Header/Header";
+import Logo from "../../components/Logo/Logo";
+import Header from "../../components/Header/Header";
 const SinglePage = () => {
     const { itemID } = useParams();
     const [id, setID] = useState(null);

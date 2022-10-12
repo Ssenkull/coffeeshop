@@ -3,7 +3,7 @@ import data from "../../data/data";
 
 import "./PleasurePage.scss";
 import Header from "../../components/Header/Header";
-import PageDescription from "../../components/PageDescription/PageDescription";
+import PageDescription from "../../pages/Description/PageDescription";
 import CoffeItemsBox from "../../components/CoffeeItemsBox/CoffeItemsBox";
 import image from "../../resources/pleasureIMG.png";
 const PleasurePage = (props) => {

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import data from "../../data/data";
-import _doShortName from "../../service";
+import _doShortName from "../../services";
 
 import "./OurCoffee.scss";
 import Header from "../Header/Header";
-import PageDescription from "../PageDescription/PageDescription";
+import PageDescription from "../../pages/Description/PageDescription";
 import CoffeItemsBox from "../CoffeeItemsBox/CoffeItemsBox";
 import image from "../../resources/OurCoffeIMG.png";
 

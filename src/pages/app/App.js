@@ -4,14 +4,14 @@ import { useState } from "react";
 
 import "./App.scss";
 
-import Spinner from "../Spinner";
-const Menu = lazy(() => import("../Menu/Menu"));
-const BurgerMenu = lazy(() => import("../Menu/BurgerMenu/BurgerMenu"));
-const Footer = lazy(() => import("../Footer/Footer"));
-const Main = lazy(() => import("../Main/Main"));
-const OurCoffee = lazy(() => import("../OurCoffee/OurCoffee"))
-const PleasurePage = lazy(() => import("../PleasurePage/PleasurePage"))
-const SinglePage = lazy(() => import("../SinglePage/SinglePage"));
+import Spinner from "../../components/Spinner";
+const Menu = lazy(() => import("../../components/Menu/Menu"));
+const BurgerMenu = lazy(() => import("../../components/Menu/BurgerMenu/BurgerMenu"));
+const Footer = lazy(() => import("../../components/Footer/Footer"));
+const Main = lazy(() => import("../../components/Main/Main"));
+const OurCoffee = lazy(() => import("../../components/OurCoffee/OurCoffee"))
+const PleasurePage = lazy(() => import("../Pleasure/PleasurePage"))
+const SinglePage = lazy(() => import("../Single/SinglePage"));
 const Page404 = lazy(() => import("../404/404"));
 
 function App() {
