@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import data from "../../data/data";
-import _doShortName from "../../service/service";
+import _doShortName from "../../service";
 
 import "./OurCoffee.scss";
 import Header from "../Header/Header";

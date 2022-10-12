@@ -1,0 +1,1 @@
+Move here your assets in resources folder

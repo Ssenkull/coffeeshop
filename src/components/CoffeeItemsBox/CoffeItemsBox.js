@@ -3,7 +3,7 @@ import image from "../../resources/ourCoffeeCards.png";
 import { useEffect, useState } from "react";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Link } from "react-router-dom";
-import _doShortName from "../../service/service";
+import _doShortName from "../../services";
 
 const CoffeItemsBox = (props) => {
     const [state, setData] = useState([]);

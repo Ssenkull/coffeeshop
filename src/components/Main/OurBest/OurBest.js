@@ -5,7 +5,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import data from "../../../data/data";
-import _doShortName from "../../../service/service"
+import _doShortName from "../../../service"
 
 const OurBest = (props) => {
 const [state, setState] = useState([]);

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import "./App.scss";
 
-import Spinner from "../Spinner/Spinner";
+import Spinner from "../Spinner";
 const Menu = lazy(() => import("../Menu/Menu"));
 const BurgerMenu = lazy(() => import("../Menu/BurgerMenu/BurgerMenu"));
 const Footer = lazy(() => import("../Footer/Footer"));
